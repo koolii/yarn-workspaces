@@ -62,3 +62,11 @@ https://github.com/koolii/yarn-workspaces/blob/main/packages/app/tsconfig.json#L
 当該アプリの動作検証は `yarn build` でアプリをビルド、
 `node packages/app/dist/main.js` 及び、 `yarn workspace app dev` で実際の動作検証ができる
 
+## エラーについて
+
+`Cannot find module 'xxx' or its corresponding type declarations.ts(2307)`
+
+こういうエラーが出る時は
+
+一度依存されているパッケージ(今回で言う packages/shread)を個別でビルドし
+、依存しているパッケージ(今回で言う packages/app)をビルドすると当該エラーは消えることがよくある
