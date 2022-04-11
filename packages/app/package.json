@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev ./main --transpileOnly",
+    "build": "yarn clean && yarn typescript",
+    "typescript": "tsc --build ./tsconfig.json",
+    "clean": "rimraf ../shared/dist && rimraf ./dist"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8"
+  }
+}

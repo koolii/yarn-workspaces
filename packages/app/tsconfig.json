@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2021",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "composite": true,
+    "declaration": true,
+  },
+  "references": [{
+    "path": "../shared"
+  }]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "yarn-workspace-try",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build": "yarn workspace app build"
+  },
+  "description": "",
+  "author": "",
+  "license": "ISC"
+}
